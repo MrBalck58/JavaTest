@@ -5,21 +5,20 @@ public class Calculator {
                 
         for (Integer param : params) {
             System.out.println(param);
-            
-            if	(typeOp.equals("+")){
-		this.result += param;
+            switch (typeOp){
+                case "+": 
+                    this.result += param;
+                case "-": 
+                    this.result = params[0] - params[1];
+                case "*": 
+                    this.result = params[0] * params[1];
+                case "/": 
+                    this.result = params[0] / params[1];                  
             }
-            if (typeOp.equals("-")) {
-                this.result = params[0] - params[1];
-            }
-            if (typeOp.equals("*")){
-                this.result = params[0] * params[1];
-            }
-            if (typeOp.equals("/")){
-                this.result = params[0] / params[1];           
-            }
+            System.out.println("param:"+param);
+        }    
     }
-        //
+            //
         public int otputResult(){
             return this.result;
         }
