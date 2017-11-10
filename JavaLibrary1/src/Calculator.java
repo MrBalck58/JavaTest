@@ -10,15 +10,17 @@ public class Calculator {
 		this.result += param;
             }
             if (typeOp.equals("-")) {
-                this.result = params[0] - params[1];
+                this.result -=param ;
             }
             if (typeOp.equals("*")){
-                this.result = params[0] * params[1];
+                this.result *= param;
             }
             if (typeOp.equals("/")){
-                this.result = params[0] / params[1];           
+                this.result /= param;           
             }
     }
+    }
+    
         //
         public int otputResult(){
             return this.result;
