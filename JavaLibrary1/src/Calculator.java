@@ -8,22 +8,23 @@ public class Calculator {
             
             if	(typeOp.equals("+")){
 		this.result += param;
-                }
-            
+            }
             if (typeOp.equals("-")) {
                 this.result = params[0] - params[1];
             }
-        }
+            if (typeOp.equals("*")){
+                this.result = params[0] * params[1];
+            }
+            if (typeOp.equals("/")){
+                this.result = params[0] / params[1];           
+            }
     }
         //
-        public int otputResult (){
+        public int otputResult(){
             return this.result;
         }
      //  
     public void clearResult ()  {
         this.result = 0;
       }
-    
-    
-    
 }
