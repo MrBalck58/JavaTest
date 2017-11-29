@@ -70,7 +70,7 @@ public class DotComBust {
             }
         }
         
-        System.out.println("result");
+        System.out.println(result);
     }
     private void finishGame(){
         
